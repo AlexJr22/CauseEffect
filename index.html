@@ -9,8 +9,31 @@
 </head>
 <body>
   
-  <h1>Olá Mundo!!</h1>
+  <main>
+    <!-- aqui vai aparecer os dados das pessoas -->
+    <p>
+      Nome: Alex Junior
+    </p>
+    <p>
+      Idade: 21
+    </p>
+    <p>
+      Telefone: (99) 91231-4564
+    </p>
+    <p>
+      País: Brasil
+    </p>
+  </main>
 
-  <script src="src/script/script.js"></script>
+  <aside>
+    <!-- aqui vai aparecer as pessoas -->
+    <button>Alex Junior</button>
+  </aside>
+
+  <script type="module">
+    import { pessoas } from './src/script/Pessoas.js'
+    
+    pessoas.Ola();
+  </script>
 </body>
 </html>
