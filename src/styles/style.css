@@ -4,9 +4,10 @@
   --color3: #027373;
   --color4: #04BFAD;
   --color5: #04BF9D;
+  --color-font: #f5deb3;
 }
 
 body {
   background-color: var(--color1);
-  color: var(--color4);
+  color: var(--color-font);
 }
