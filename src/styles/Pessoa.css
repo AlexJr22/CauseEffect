@@ -1,0 +1,6 @@
+.Pessoa {
+  background-color: var(--color3);
+  display: flex;
+
+  height: 35px;
+}
