@@ -1,3 +1,5 @@
+@import url(./Pessoa.css);
+
 :root {
   --color1: #172026;
   --color2: #5FCDD9;
@@ -16,6 +18,7 @@
 body {
   background-color: var(--color1);
   color: var(--color-font);
+
   display: flex;
 
   height: 100vh;
@@ -23,14 +26,16 @@ body {
 }
 
 main {
-  background-color: var(--color3);
   display: flex;
+
+  height: 100%;
+  width: 100%;
   flex-direction: column; /* esse comando vai deixar o main organizado da maneira desejada */
+  border: 1px solid white;
 }
 
 aside {
   background-color: var(--color2);
-  /* display: flex; */
-
-  width: 240px;
+  min-width: 250px;
+  width: 24%;
 }
