@@ -31,6 +31,6 @@ main {
   height: 100%;
   width: 100%;
   flex-direction: column; /* esse comando vai deixar o main organizado da maneira desejada */
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
