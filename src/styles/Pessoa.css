@@ -4,7 +4,7 @@ aside {
   flex-direction: column;
 
   min-width: 210px;
-  width: 24%;
+  width: 40%;
 
   margin: 9px;
   border-radius: 7px;
@@ -13,10 +13,10 @@ aside {
 .Pessoa {
   background-color: var(--color3);
   display: flex;
-  font-size: 100%;
+  font-size: 1em;
   
   height: 35px;
-  width: 80%;
+  width: 85%;
   
   align-items: center;
   justify-content: center;
