@@ -1,10 +1,10 @@
 main {
+  background-color: var(--color2);
   display: flex;
   width: 100%;
   
   flex-direction: column; /* esse comando vai deixar o main organizado da maneira desejada */
 
   border-radius: 5px;
-  border: 1px solid white;
   margin: 9px;
 }
