@@ -15,30 +15,17 @@ aside {
   display: flex;
   font-size: 1em;
   
-  height: 35px;
-  width: 85%;
-  
   align-items: center;
   justify-content: center;
   
   margin-top: 16px;
   margin-inline: auto;
-
-  border-radius: 5px;
-  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
   
   cursor: pointer;
   user-select: none;
 }
 
-.Pessoa:hover {
-  background-color: var(--color1);
-  color: white;
-  transition: 0.3s;
-}
-
-.Pessoa:active {
-  transition: 0.2s;
-  color: var(--color4);
-  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+.Pessoa.card {
+  width: 85%;
+  font-size: 90%;
 }
