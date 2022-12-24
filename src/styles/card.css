@@ -6,4 +6,18 @@
   
   padding: 9px;
   border-radius: 5px;
+
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  background-color: var(--color1);
+  color: white;
+  transition: 0.3s;
+}
+
+.card:active {
+  transition: 0.2s;
+  color: var(--color4);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
 }
