@@ -1,4 +1,5 @@
 @import url(./Pessoa.css);
+@import url(./main.css);
 
 :root {
   --color1: #172026;
@@ -24,13 +25,3 @@ body {
   height: 100vh;
   width: 100vw;
 }
-
-main {
-  display: flex;
-
-  height: 100%;
-  width: 100%;
-  flex-direction: column; /* esse comando vai deixar o main organizado da maneira desejada */
-  /* border: 1px solid white; */
-}
-
