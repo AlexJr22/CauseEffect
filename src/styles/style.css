@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: var(--color2);
+  background: linear-gradient( -47deg, #255055, #61cdda);
   color: #fff;
 
   display: flex;
