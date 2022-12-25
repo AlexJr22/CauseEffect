@@ -1,3 +1,24 @@
 #novaP {
+  background: linear-gradient( -47deg, rgb(165, 0, 0), rgb(209, 67, 67) );
+  color: var(--color2);
+  font-size: 1.7em;
+  
+  height: 20%;
+  width: 100%;
 
+  border-radius: 0px 0px 15px 15px;
+  border: none;
+  
+  cursor: pointer;
+  transition: .5s;
+}
+
+#novaP:hover {
+  transition: .5s;
+  color: var(--color5);
+}
+
+#novaP:active {
+  color: yellowgreen;
+  transition: .5s;
 }
