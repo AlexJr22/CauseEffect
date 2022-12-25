@@ -18,7 +18,10 @@
 .card:hover {
   background-color: var(--color2);
   color: var(--color1);
+  font-weight: bold;
+
   transition: 0.3s;
+
   box-shadow: inset 3px 3px 5px #1f4347,
   inset -3px -3px 5px #7dffff;
 }
@@ -26,5 +29,4 @@
 .card:active {
   transition: 0.2s;
   color: var(--color4);
-
 }
