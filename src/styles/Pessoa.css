@@ -19,12 +19,28 @@ aside {
 
 #Pessoas {
   height: 90%;
+  overflow-y: scroll;
 }
 
+#Pessoas::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+#Pessoas::-webkit-scrollbar-thumb {
+  background-color: var(--color1);
+  border-radius: 5px;
+}
+
+
 .Pessoa.card {
-  justify-content: center;
+  font-size: 100%;
+
+  width: 85%;
+  height: 45px;
+  
   margin-inline: auto;
   margin-block: 12px;
-  width: 85%;
-  font-size: 100%;
+  
+  justify-content: center;
 }
