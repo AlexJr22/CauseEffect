@@ -1,8 +1,8 @@
 main {
   background-color: var(--color2);
   display: flex;
-  height: 260px;
-  width: 300px;
+  height: 60%;
+  width: 50%;
   
   flex-direction: column; /* esse comando vai deixar o main organizado da maneira desejada */
 
