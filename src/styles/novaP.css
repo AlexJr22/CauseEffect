@@ -11,6 +11,7 @@
   
   cursor: pointer;
   transition: .5s;
+  user-select: none;
 }
 
 #novaP:hover {
