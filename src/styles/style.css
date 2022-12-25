@@ -1,6 +1,7 @@
 @import url(./Pessoa.css);
 @import url(./main.css);
 @import url(./card.css);
+@import url(./novaP.css);
 
 :root {
   --color1: #172026;
