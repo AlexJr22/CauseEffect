@@ -16,7 +16,16 @@ const pessoas = [
     telef: '(10) 93213-9876',
     estado: 'MG',
     pais: 'Brasil'
-  }
+  },
+  {
+    nome: 'Ester',
+    sobrenome: 'Alexandre',
+    dadaDeNascimento: 'xx/xx/xxxx',
+    idade: 19,
+    telef: '(10) 93213-9876',
+    estado: 'SP',
+    pais: 'Brasil'
+  },
 ]
 
 export { pessoas };
