@@ -1,5 +1,5 @@
 main {
-  background-color: var(--color4);
+  background-color: var(--color2);
   display: flex;
   height: 260px;
   width: 300px;
@@ -10,6 +10,9 @@ main {
   border-radius: 5px;
   margin-inline: auto;
   align-self: center;
+
+  box-shadow:  11px 11px 22px #1f4347,
+  -11px -11px 22px #7dffff;
 }
 
 main .card {

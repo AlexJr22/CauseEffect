@@ -1,13 +1,18 @@
 aside {
-  background-color: var(--color4);
+  background-color: var(--color2);
   display: flex;
   flex-direction: column;
 
   min-width: 210px;
-  width: 35%;
+  width: 30%;
+  height: 60%;
 
-  margin: 9px;
-  border-radius: 7px;
+  margin: 60px;
+  border-radius: 15px;
+  align-self: center;
+
+  box-shadow:  11px 11px 22px #1f4347,
+  -11px -11px 22px #7dffff;
 }
 
 .Pessoa.card {
