@@ -10,9 +10,9 @@ const pessoas = [
   },
   {
     nome: 'Ezequiel',
-    sobrenome: 'BW',
-    dadaDeNascimento: 'xx/xx/xxxx',
-    idade: 22,
+    sobrenome: 'Wartha',
+    dadaDeNascimento: '15/03/2001',
+    idade: 21,
     telef: '(10) 93213-9876',
     estado: 'MG',
     pais: 'Brasil'
@@ -27,6 +27,5 @@ const pessoas = [
     pais: 'Brasil'
   },
 ]
-
 
 export { pessoas };
