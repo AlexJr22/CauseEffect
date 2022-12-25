@@ -1,6 +1,6 @@
 import { pessoas } from './Pessoas.js';
     
-let aside = document.getElementById('Pessoas');
+let Pessoa = document.getElementById('Pessoas');
 
 pessoas.forEach(pessoa => {
 
@@ -9,5 +9,5 @@ pessoas.forEach(pessoa => {
   <div class="Pessoa card">${pessoa.nome} ${pessoa.sobrenome}</div>
   `;
 
-  aside.appendChild(cardPessoa);
+  Pessoa.appendChild(cardPessoa);
 });

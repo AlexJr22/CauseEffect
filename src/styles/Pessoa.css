@@ -1,6 +1,7 @@
 aside {
   /* background-color: var(--color2); */
   background: linear-gradient( -47deg, #61cdda, #36777e);
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -16,10 +17,14 @@ aside {
   -11px -11px 22px #7dffff;
 }
 
+#Pessoas {
+  height: 90%;
+}
+
 .Pessoa.card {
   justify-content: center;
   margin-inline: auto;
-  margin-top: 12px;
+  margin-block: 12px;
   width: 85%;
   font-size: 100%;
 }
