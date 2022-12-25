@@ -2,7 +2,6 @@ import { pessoas } from './Pessoas.js';
     
 let aside = document.getElementById('Pessoas');
 
-console.log(aside.innerHTML);
 pessoas.forEach(pessoa => {
 
   let cardPessoa = document.createElement("div");
