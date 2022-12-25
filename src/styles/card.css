@@ -1,5 +1,5 @@
 .card {
-  background-color: var(--color3);
+  background-color: var(--color1);
   display: flex;
 
   width: fit-content;
@@ -11,16 +11,20 @@
     
   cursor: pointer;
   user-select: none;
+  box-shadow: inset 3px 3px 5px #000000,
+              inset -3px -3px 5px #445661;
 }
 
 .card:hover {
-  background-color: var(--color1);
-  color: white;
+  background-color: var(--color2);
+  color: var(--color1);
   transition: 0.3s;
+  box-shadow: inset 3px 3px 5px #1f4347,
+  inset -3px -3px 5px #7dffff;
 }
 
 .card:active {
   transition: 0.2s;
   color: var(--color4);
-  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+
 }
