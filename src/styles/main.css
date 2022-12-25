@@ -8,7 +8,7 @@ main {
   flex-direction: column; /* esse comando vai deixar o main organizado da maneira desejada */
 
   justify-content: center;
-  /* border-radius: 5px; */
+  border-radius: 15px;
   margin-inline: auto;
   align-self: center;
 
