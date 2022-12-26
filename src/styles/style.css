@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@import url(./Pessoa.css);
-@import url(./main.css);
+@import url(./containerPessoas.css);
+@import url(./btnADD.css);
 @import url(./card.css);
-@import url(./novaP.css);
+@import url(./dadosP.css);
 
 :root {
   --color1: #172026;

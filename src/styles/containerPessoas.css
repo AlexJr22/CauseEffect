@@ -1,4 +1,4 @@
-.conteinerPessoas {
+#conteinerPessoas {
   /* background-color: var(--color2); */
   background: linear-gradient( -47deg, #61cdda, #36777e);
   position: relative;
