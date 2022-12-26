@@ -4,6 +4,7 @@
 @import url(./btnADD.css);
 @import url(./card.css);
 @import url(./dadosP.css);
+@import url(./neumorphism.css);
 
 :root {
   --color1: #172026;
