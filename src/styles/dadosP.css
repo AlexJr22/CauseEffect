@@ -1,17 +1,30 @@
 #dadosP {
+  color: #fff;
+
   display: flex;
   height: 60%;
   width: 50%;
-  
-  flex-direction: column; /* esse comando vai deixar o main organizado da maneira desejada */
 
-  justify-content: center;
-  border-radius: 15px;
-  margin-inline: auto;
+  flex-wrap: wrap;
   align-self: center;
 
+  padding: 15px;
+  margin-inline: auto;
 }
 
-main .card {
-  margin: 10px;
+.containerNome, .containerIdade {
+  width: 40%;
+  height: 80px;
+  
+  text-align: center;
+  
+  margin-inline: auto;
+}
+
+
+#dadosP .neumorphism {
+  background: var(--color1);
+
+  box-shadow: inset 3px 3px 5px #000000,
+            inset -3px -3px 5px #445661;
 }
