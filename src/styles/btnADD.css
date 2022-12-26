@@ -1,5 +1,6 @@
 #novaP {
-  background: linear-gradient( -47deg, rgb(165, 0, 0), rgb(209, 67, 67) );
+  /* background: linear-gradient( -47deg, rgb(165, 0, 0), rgb(209, 67, 67) ); */
+  background: linear-gradient( -47deg, #434f57, #090d0f);
   color: var(--color2);
   font-size: 1.7em;
   
