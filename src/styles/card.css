@@ -18,7 +18,6 @@
 .card:hover {
   background-color: var(--color2);
   color: var(--color1);
-  font-weight: bold;
 
   transition: 0.3s;
 
