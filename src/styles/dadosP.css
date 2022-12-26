@@ -21,6 +21,12 @@
   margin-inline: auto;
 }
 
+.containerNome #Nome, .containerIdade #Idade {
+  color: var(--color2);
+  text-align: start;
+  padding-left: 10px;
+  margin-block: 7px;
+}
 
 #dadosP .neumorphism {
   background: var(--color1);
