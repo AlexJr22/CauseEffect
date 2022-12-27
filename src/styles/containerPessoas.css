@@ -1,4 +1,5 @@
 #conteinerPessoas {
+  color: var(--color2);
   position: relative;
   display: flex;
   flex-direction: column;
