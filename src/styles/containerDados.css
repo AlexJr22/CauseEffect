@@ -1,4 +1,4 @@
-#dadosP {
+#containerDados {
   color: #fff;
 
   display: flex;
@@ -12,7 +12,7 @@
   margin-inline: auto;
 }
 
-.containerNome, .containerIdade {
+#containerDados .container{
   width: 40%;
   height: 80px;
   
@@ -21,14 +21,14 @@
   margin-inline: auto;
 }
 
-.containerNome #Nome, .containerIdade #Idade {
+#containerDados .dado{
   color: var(--color2);
   text-align: start;
   padding-left: 10px;
   margin-block: 7px;
 }
 
-#dadosP .neumorphism {
+#containerDados .neumorphism {
   background: var(--color1);
 
   box-shadow: inset 3px 3px 5px #000000,
