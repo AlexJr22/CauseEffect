@@ -1,3 +1,4 @@
+// array de objetos com os dados das pessoas
 const pessoas = [
   {
     nome: 'Alex',
@@ -26,4 +27,19 @@ const pessoas = [
     estado: 'SP',
     pais: 'Brasil'
   },
-]
+];
+
+//criando botões para cada pessoa no array
+
+const divPessoas = document.getElementById('Pessoas'); // elemento onde os botões vão ficar
+
+pessoas.forEach(pessoa => {
+
+  const cardPessoa = document.createElement('div'); // criando um elemento para receber os dados
+
+  cardPessoa.classList.add('Pessoa', 'card'); // adicionando class ao elemento
+  cardPessoa.innerHTML = `${pessoa.nome} ${pessoa.sobrenome}`; // adicionando o conteúdo
+  divPessoas.appendChild(cardPessoa); //  adicionando o elemento a divPessoas
+
+});
+
