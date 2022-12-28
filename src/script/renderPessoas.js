@@ -14,9 +14,15 @@ const renderPessoas = {
       cardPessoa.innerHTML = `${pessoa.nome} ${pessoa.sobrenome}`;
  
       renderPessoas.Pessoas.appendChild(cardPessoa);
-  
-    })
 
+    });
+
+    let pessoa = document.querySelectorAll('.Pessoa');
+    console.log(pessoa);
+    
+    for (let i = pessoa.length; i > 0; i--) {
+
+    };
   },
 
 };
