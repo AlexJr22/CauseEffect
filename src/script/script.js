@@ -31,15 +31,18 @@ const pessoas = [
 
 //criando botões para cada pessoa no array
 
-const divPessoas = document.getElementById('Pessoas'); // elemento onde os botões vão ficar
+const divPessoas = document.querySelector('#Pessoas'); // elemento onde os botões vão ficar
 
-pessoas.forEach(pessoa => {
-
-  const cardPessoa = document.createElement('div'); // criando um elemento para receber os dados
-
-  cardPessoa.classList.add('Pessoa', 'card'); // adicionando class ao elemento
-  cardPessoa.innerHTML = `${pessoa.nome} ${pessoa.sobrenome}`; // adicionando o conteúdo
-  divPessoas.appendChild(cardPessoa); //  adicionando o elemento a divPessoas
-
+pessoas.map(p => {
+  divPessoas.innerHTML += `<div onclick="selecionarPessoa(this)" class="Pessoa card">${p.nome} ${p.sobrenome}</div>`;
 });
 
+const selecionarPessoa = (element) => {
+
+  // adiciona e remore a class="active"
+  for (let i = 0; i < divPessoas.children.length; i++) {
+    divPessoas.children[i].classList.remove('active');
+  };
+
+  element.classList.add('active');
+};
