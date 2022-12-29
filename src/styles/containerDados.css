@@ -1,4 +1,4 @@
-#containerDados {
+#containerDados, #AdicionarPessoa {
   color: #fff;
 
   display: flex;
@@ -13,7 +13,7 @@
   margin-inline: auto;
 }
 
-#containerDados .container{
+#containerDados .container, #AdicionarPessoa .container{
   width: 40%;
   height: 80px;
   
@@ -29,9 +29,20 @@
   margin-block: 7px;
 }
 
-#containerDados .neumorphism {
+#containerDados .neumorphism, #AdicionarPessoa .neumorphism{
   background: var(--color1);
 
   box-shadow: inset 3px 3px 5px #000000,
             inset -3px -3px 5px #445661;
+}
+
+/* inputs do AdicionarPessoas */
+#AdicionarPessoa .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#AdicionarPessoa input {
+  height: 45px;
+  text-align: center;
 }
