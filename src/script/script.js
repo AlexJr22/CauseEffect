@@ -29,10 +29,11 @@ const pessoas = [
   },
 ];
 
-//criando botões para cada pessoa no array
 
+const containerMain = document.getElementById('containerMain');
 const divPessoas = document.querySelector('#Pessoas'); // elemento onde os botões vão ficar
 
+//criando botões para cada pessoa no array
 pessoas.forEach((p, index) => {
   divPessoas.innerHTML += `<div onclick="selecionarPessoa(this, ${index})" class="Pessoa card">${p.nome} ${p.sobrenome}</div>`;
 });
@@ -83,48 +84,21 @@ const selecionarPessoa = (element, index) => {
 };
 
 
-const bntAdd = document.querySelector('#novaP');
+const btnNovaPessoa = document.getElementById('btnNovaPessoa');
+const AdicionarPessoa = document.getElementById('AdicionarPessoa');
+// console.log(btnNovaPessoa)
 
+btnNovaPessoa.addEventListener('click', () => {
+    containerMain.style.display = 'none';
+    AdicionarPessoa.style.display = 'flex';
+});
 
-const adicionaPessoa = () => {
-
-  document.querySelector('#Nome').innerHTML = `
-    <div class="dado">Nome:</div>
-    <input onchange="console.log(this.textArea)" value="test" id="inputNome" type="text">
-  `;  // adiciona o nome
-
-  document.querySelector('#Idade').innerHTML = `
-    <div class="dado">Idade:</div>
-    <input id="inputIdade" type="text">
-  `;  // adiciona a idade 
-
-  document.querySelector('#DataDeNascimento').innerHTML = `
-    <div class="dado">Data de Nascimento:</div>
-    <input id="inputData" type="text">
-  `;  // adiciona a data de nascimento
-
-  document.querySelector('#Telefone').innerHTML = `
-    <div class="dado">Telefone:</div>
-    <input id="inputTelef" type="text">
-  `;  // adiciona o telefone
-
-  document.querySelector('#Estado').innerHTML = `
-    <div class="dado">Estado:</div>
-    <input id="inputEstado" type="text">
-  `;  // adiciona o estado 
-
-  document.querySelector('#Pais').innerHTML = `
-    <div class="dado">País:</div>
-    <input id="inputPais" type="text">
-  `;  // adiciona o país
-
-}
-const inputNome = document.getElementById('inputNome');
-const inputIdade = document.querySelector('#inputIdade');
-const inputData = document.querySelector('#inputData');
-const inputTelef = document.querySelector('#inputTelef');
-const inputEstado = document.querySelector('#inputEstado');
-const inputPais = document.querySelector('#inputPais');
+// const inputNome = document.getElementById('inputNome');
+// const inputIdade = document.querySelector('#inputIdade');
+// const inputData = document.querySelector('#inputData');
+// const inputTelef = document.querySelector('#inputTelef');
+// const inputEstado = document.querySelector('#inputEstado');
+// const inputPais = document.querySelector('#inputPais');
 
 
 // divPessoas.innerHTML = '';
