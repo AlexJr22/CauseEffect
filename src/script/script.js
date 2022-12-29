@@ -74,8 +74,8 @@ const selecionarPessoa = (element, index) => {
   document.querySelector('#Estado').innerHTML = `
     <div class="dado">Estado:</div>
     <div class="dadoP">${pessoas[index].estado}</div> 
-  `;  // adiciona o estado 
-
+    `;  // adiciona o estado 
+    
   document.querySelector('#Pais').innerHTML = `
     <div class="dado">País:</div>
     <div class="dadoP">${pessoas[index].pais}</div>
@@ -85,11 +85,12 @@ const selecionarPessoa = (element, index) => {
 
 const bntAdd = document.querySelector('#novaP');
 
-bntAdd.addEventListener('click', () => {
+
+const adicionaPessoa = () => {
 
   document.querySelector('#Nome').innerHTML = `
     <div class="dado">Nome:</div>
-    <input id="inputNome" type="text">
+    <input onchange="console.log(this.textArea)" value="test" id="inputNome" type="text">
   `;  // adiciona o nome
 
   document.querySelector('#Idade').innerHTML = `
@@ -117,10 +118,17 @@ bntAdd.addEventListener('click', () => {
     <input id="inputPais" type="text">
   `;  // adiciona o país
 
-  divPessoas.innerHTML = '';
-  pessoas.forEach((p, index) => {
-    divPessoas.innerHTML += `<div onclick="selecionarPessoa(this, ${index})" class="Pessoa card">${p.nome} ${p.sobrenome}</div>`;
-  });
+}
+const inputNome = document.getElementById('inputNome');
+const inputIdade = document.querySelector('#inputIdade');
+const inputData = document.querySelector('#inputData');
+const inputTelef = document.querySelector('#inputTelef');
+const inputEstado = document.querySelector('#inputEstado');
+const inputPais = document.querySelector('#inputPais');
 
-  console.log(pessoas);
-})
+
+// divPessoas.innerHTML = '';
+// pessoas.forEach((p, index) => {
+//   divPessoas.innerHTML += `<div onclick="selecionarPessoa(this, ${index})" class="Pessoa card">${p.nome} ${p.sobrenome}</div>`;
+// });
+
