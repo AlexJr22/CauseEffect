@@ -31,3 +31,11 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+#containerMain {
+  display: flex;
+  border: solid black;
+
+  height: 100%;
+  width: 100%;
+}

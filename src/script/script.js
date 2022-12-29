@@ -33,9 +33,10 @@ const pessoas = [
 
 const divPessoas = document.querySelector('#Pessoas'); // elemento onde os botões vão ficar
 
-pessoas.map((p, index) => {
+pessoas.forEach((p, index) => {
   divPessoas.innerHTML += `<div onclick="selecionarPessoa(this, ${index})" class="Pessoa card">${p.nome} ${p.sobrenome}</div>`;
 });
+
 
 const selecionarPessoa = (element, index) => {
 
@@ -80,3 +81,20 @@ const selecionarPessoa = (element, index) => {
     <div class="dadoP">${pessoas[index].pais}</div>
   `;  // adiciona o país
 };
+
+
+const bntAdd = document.querySelector('#novaP');
+
+bntAdd.addEventListener('click', () => {
+
+  pessoas.push({
+    
+  });
+  
+  divPessoas.innerHTML = '';
+  pessoas.forEach((p, index) => {
+    divPessoas.innerHTML += `<div onclick="selecionarPessoa(this, ${index})" class="Pessoa card">${p.nome} ${p.sobrenome}</div>`;
+  });
+
+  console.log(pessoas);
+})
