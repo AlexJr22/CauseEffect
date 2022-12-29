@@ -39,6 +39,7 @@
 /* inputs do AdicionarPessoas */
 #AdicionarPessoa {
   display: none;
+
 }
 #AdicionarPessoa .container {
   display: flex;
@@ -46,6 +47,8 @@
   justify-content: center;
 }
 #AdicionarPessoa input {
+  color: #fff;
+  width: 80%;
   height: 45px;
   text-align: center;
 }
