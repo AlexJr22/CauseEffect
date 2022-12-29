@@ -1,4 +1,4 @@
-#bntNovaPessoa {
+#btnNovaPessoa {
   /* background: linear-gradient( -47deg, rgb(165, 0, 0), rgb(209, 67, 67) ); */
   background: linear-gradient( -47deg, #434f57, #090d0f);
   color: var(--color2);
@@ -15,12 +15,12 @@
   user-select: none;
 }
 
-#bntNovaPessoa:hover {
+#btnNovaPessoa:hover {
   transition: .5s;
   color: var(--color5);
 }
 
-#bntNovaPessoa:active {
+#btnNovaPessoa:active {
   color: yellowgreen;
   transition: .5s;
 }
