@@ -87,10 +87,36 @@ const bntAdd = document.querySelector('#novaP');
 
 bntAdd.addEventListener('click', () => {
 
-  pessoas.push({
-    
-  });
-  
+  document.querySelector('#Nome').innerHTML = `
+    <div class="dado">Nome:</div>
+    <input id="inputNome" type="text">
+  `;  // adiciona o nome
+
+  document.querySelector('#Idade').innerHTML = `
+    <div class="dado">Idade:</div>
+    <input id="inputIdade" type="text">
+  `;  // adiciona a idade 
+
+  document.querySelector('#DataDeNascimento').innerHTML = `
+    <div class="dado">Data de Nascimento:</div>
+    <input id="inputData" type="text">
+  `;  // adiciona a data de nascimento
+
+  document.querySelector('#Telefone').innerHTML = `
+    <div class="dado">Telefone:</div>
+    <input id="inputTelef" type="text">
+  `;  // adiciona o telefone
+
+  document.querySelector('#Estado').innerHTML = `
+    <div class="dado">Estado:</div>
+    <input id="inputEstado" type="text">
+  `;  // adiciona o estado 
+
+  document.querySelector('#Pais').innerHTML = `
+    <div class="dado">País:</div>
+    <input id="inputPais" type="text">
+  `;  // adiciona o país
+
   divPessoas.innerHTML = '';
   pessoas.forEach((p, index) => {
     divPessoas.innerHTML += `<div onclick="selecionarPessoa(this, ${index})" class="Pessoa card">${p.nome} ${p.sobrenome}</div>`;
