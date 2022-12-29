@@ -34,8 +34,6 @@ body {
 
 #containerMain {
   display: flex;
-  border: solid black;
-
   height: 100%;
   width: 100%;
 }
