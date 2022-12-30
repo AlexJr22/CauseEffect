@@ -51,7 +51,7 @@ const selecionarPessoa = (element, index) => {
   // elementos onde os dados vão aparecer
   document.querySelector('#Nome').innerHTML = `
     <div class="dado">Nome:</div>
-    <div class="dadoP">${pessoas[index].nome} ${pessoas[index].sobrenome}</div> 
+    <div class="dadoP">${pessoas[index].nome}</div> 
   `;  // adiciona o nome
 
   document.querySelector('#Idade').innerHTML = `
@@ -104,4 +104,19 @@ btnNovaPessoa.addEventListener('click', () => {
 btnAdicionar.addEventListener('click', () => {
   containerMain.style.display = 'flex';
   containerAddPessoa.style.display = 'none';
+  
+  pessoas.push(
+    {
+      nome: inputNome.value,
+      dadaDeNascimento: inputData.value,
+      idade: inputIdade.value,
+      telef: inputTelef.value,
+      estado: inputEstado.value,
+      pais: inputPais.value
+    },
+  );
+  divPessoas.innerHTML = '';
+  pessoas.forEach((p, index) => {
+    divPessoas.innerHTML += `<div onclick="selecionarPessoa(this, ${index})" class="Pessoa card">${p.nome}</div>`;
+  });
 });
