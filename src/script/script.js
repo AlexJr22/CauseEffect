@@ -1,8 +1,7 @@
 // array de objetos com os dados das pessoas
 const pessoas = [
   {
-    nome: 'Alex',
-    sobrenome: 'Junior',
+    nome: 'Alex Junior',
     dadaDeNascimento: '12/11/2001',
     idade: 21,
     telef: '(10) 93213-9876',
@@ -10,8 +9,7 @@ const pessoas = [
     pais: 'Brasil'
   },
   {
-    nome: 'Ezequiel',
-    sobrenome: 'Wartha',
+    nome: 'Ezequiel Wartha',
     dadaDeNascimento: '15/03/2001',
     idade: 21,
     telef: '(10) 93213-9876',
@@ -19,8 +17,7 @@ const pessoas = [
     pais: 'Brasil'
   },
   {
-    nome: 'Ester',
-    sobrenome: 'Alexandre',
+    nome: 'Ester Alexandre',
     dadaDeNascimento: 'xx/xx/xxxx',
     idade: 19,
     telef: '(10) 93213-9876',
@@ -35,7 +32,7 @@ const divPessoas = document.querySelector('#Pessoas');          // elemento onde
 
 //criando botões para cada pessoa no array
 pessoas.forEach((p, index) => {
-  divPessoas.innerHTML += `<div onclick="selecionarPessoa(this, ${index})" class="Pessoa card">${p.nome} ${p.sobrenome}</div>`;
+  divPessoas.innerHTML += `<div onclick="selecionarPessoa(this, ${index})" class="Pessoa card">${p.nome}</div>`;
 });
 
 
@@ -108,10 +105,3 @@ btnAdicionar.addEventListener('click', () => {
   containerMain.style.display = 'flex';
   containerAddPessoa.style.display = 'none';
 });
-
-
-// divPessoas.innerHTML = '';
-// pessoas.forEach((p, index) => {
-//   divPessoas.innerHTML += `<div onclick="selecionarPessoa(this, ${index})" class="Pessoa card">${p.nome} ${p.sobrenome}</div>`;
-// });
-
