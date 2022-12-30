@@ -1,6 +1,5 @@
 #containerAddPessoa {
 	display: none;
-	border: solid black;
 	width: 100%;
 	flex-direction: column;
 	align-items: center;
