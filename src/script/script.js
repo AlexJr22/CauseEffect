@@ -30,8 +30,8 @@ const pessoas = [
 ];
 
 
-const containerMain = document.getElementById('containerMain');
-const divPessoas = document.querySelector('#Pessoas'); // elemento onde os botões vão ficar
+const containerMain = document.getElementById('containerMain'); // elemento que contém o conteúdo principal do site
+const divPessoas = document.querySelector('#Pessoas');          // elemento onde os botões vão ficar
 
 //criando botões para cada pessoa no array
 pessoas.forEach((p, index) => {
@@ -75,7 +75,7 @@ const selecionarPessoa = (element, index) => {
   document.querySelector('#Estado').innerHTML = `
     <div class="dado">Estado:</div>
     <div class="dadoP">${pessoas[index].estado}</div> 
-    `;  // adiciona o estado 
+  `;  // adiciona o estado 
     
   document.querySelector('#Pais').innerHTML = `
     <div class="dado">País:</div>
@@ -84,21 +84,30 @@ const selecionarPessoa = (element, index) => {
 };
 
 
-const btnNovaPessoa = document.getElementById('btnNovaPessoa');
-const containerAddPessoa = document.getElementById('containerAddPessoa');
+const btnNovaPessoa = document.getElementById('btnNovaPessoa');           // botão para adicionar nova pessoa
+const containerAddPessoa = document.getElementById('containerAddPessoa'); // elemento para inserção de dados
+const btnAdicionar = document.getElementById('btnAdicionar');              // botão que envia os dados para o array
+
+//inputs que vão receber os dados da nova pessoa
+const inputNome = document.getElementById('inputNome');
+const inputIdade = document.getElementById('inputIdade');
+const inputData = document.getElementById('inputData');
+const inputTelef = document.getElementById('inputTelef');
+const inputEstado = document.getElementById('inputEstado');
+const inputPais = document.getElementById('inputPais');
+
 // console.log(btnNovaPessoa)
 
+// funções dos botões
 btnNovaPessoa.addEventListener('click', () => {
-    containerMain.style.display = 'none';
-    containerAddPessoa.style.display = 'flex';
+  containerMain.style.display = 'none';
+  containerAddPessoa.style.display = 'flex';
 });
 
-// const inputNome = document.getElementById('inputNome');
-// const inputIdade = document.querySelector('#inputIdade');
-// const inputData = document.querySelector('#inputData');
-// const inputTelef = document.querySelector('#inputTelef');
-// const inputEstado = document.querySelector('#inputEstado');
-// const inputPais = document.querySelector('#inputPais');
+btnAdicionar.addEventListener('click', () => {
+  containerMain.style.display = 'flex';
+  containerAddPessoa.style.display = 'none';
+});
 
 
 // divPessoas.innerHTML = '';
