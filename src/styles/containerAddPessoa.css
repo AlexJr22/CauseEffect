@@ -1,0 +1,16 @@
+.containerAddPessoa {
+	display: flex;
+	border: solid black;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#btnAdicionar {
+	margin-top: 15px;
+	width: 200px;
+	height: 60px;
+	border-radius: 5px;
+	box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.335);
+}

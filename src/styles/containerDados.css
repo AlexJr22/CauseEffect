@@ -37,10 +37,10 @@
 }
 
 /* inputs do AdicionarPessoas */
-#AdicionarPessoa {
+/* #AdicionarPessoa {
   display: none;
 
-}
+} */
 #AdicionarPessoa .container {
   display: flex;
   align-items: center;

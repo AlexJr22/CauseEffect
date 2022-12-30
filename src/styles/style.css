@@ -6,6 +6,7 @@
 @import url(./containerDados.css);
 @import url(./neumorphism.css);
 @import url(./active.css);
+@import url(./containerAddPessoa.css);
 
 :root {
   --color1: #172026;
