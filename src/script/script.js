@@ -85,12 +85,12 @@ const selecionarPessoa = (element, index) => {
 
 
 const btnNovaPessoa = document.getElementById('btnNovaPessoa');
-const AdicionarPessoa = document.getElementById('AdicionarPessoa');
+const containerAddPessoa = document.getElementById('containerAddPessoa');
 // console.log(btnNovaPessoa)
 
 btnNovaPessoa.addEventListener('click', () => {
     containerMain.style.display = 'none';
-    AdicionarPessoa.style.display = 'flex';
+    containerAddPessoa.style.display = 'flex';
 });
 
 // const inputNome = document.getElementById('inputNome');
