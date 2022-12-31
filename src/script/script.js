@@ -102,23 +102,51 @@ btnNovaPessoa.addEventListener('click', () => {
 });
 
 btnAdicionar.addEventListener('click', () => {
-    containerMain.style.display = 'flex';
-    containerAddPessoa.style.display = 'none';
+    
+    const idade = (data = Array)  => {
+        var date = new Date,
+        ano_atual = date.getFullYear();
+        mes_atual = date.getMonth() + 1;
+        dia_atual = date.getDate();
+    
+        let ano_aniversario = data[0];
+        let mes_aniversario = data[1];
+        let dia_aniversario = data[2];
+        
+        let idade_atual = ano_atual - ano_aniversario;
+    
+        if (mes_atual < mes_aniversario || mes_atual == mes_aniversario && dia_atual < dia_aniversario) {
+            idade_atual--;
+        };
+        
+        return idade_atual < 0 ? 0 : idade_atual;
+    }; 
+    const data = String(inputData.value).split('-');
+    inputIdade.value = idade(data);
+    
+    if(inputNome.value && inputIdade.value && inputData.value && inputTelef.value && inputEstado.value && inputPais.value) {
+        containerMain.style.display = 'flex';
+        containerAddPessoa.style.display = 'none';
+        
+        pessoas.push(
+            {
+                nome: inputNome.value,
+                dadaDeNascimento: inputData.value,
+                idade: inputIdade.value,
+                telef: inputTelef.value,
+                estado: inputEstado.value,
+                pais: inputPais.value
+            },
+        );
+        divPessoas.innerHTML = '';
+        pessoas.forEach((p, index) => {
+            divPessoas.innerHTML += `
+                <div onclick="selecionarPessoa(${index})" class="Pessoa card">${p['nome']}</div>
+            `;
+        });
+        
+    } else {
+        alert('Preencha todos os campos');
+    };
 
-    pessoas.push(
-        {
-            nome: inputNome.value,
-            dadaDeNascimento: inputData.value,
-            idade: inputIdade.value,
-            telef: inputTelef.value,
-            estado: inputEstado.value,
-            pais: inputPais.value
-        },
-    );
-    divPessoas.innerHTML = '';
-    pessoas.forEach((p, index) => {
-        divPessoas.innerHTML += `
-            <div onclick="selecionarPessoa(${index})" class="Pessoa card">${p['nome']}</div>
-        `;
-    });
 });
