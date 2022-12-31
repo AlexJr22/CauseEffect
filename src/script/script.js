@@ -106,7 +106,7 @@ btnAdicionar.addEventListener('click', () => {
     const data = String(inputData.value).split('-'); // converte o valor do inputData para um array com 3 posições 
 
     // calcular a idade da pessea
-    const idade = (data = Array)  => { // essa função vai receber o date acima para calcular a idade da pessoa
+    const idade = (data = Array)  => { // essa função vai receber a const date acima para calcular a idade da pessoa
         var date = new Date,
         ano_atual = date.getFullYear();
         mes_atual = date.getMonth() + 1;
@@ -130,6 +130,7 @@ btnAdicionar.addEventListener('click', () => {
         containerMain.style.display = 'flex';
         containerAddPessoa.style.display = 'none';
         
+        // adicionar a nova pessoa
         pessoas.push(
             {
                 nome: inputNome.value,
@@ -140,6 +141,8 @@ btnAdicionar.addEventListener('click', () => {
                 pais: inputPais.value
             },
         );
+
+        // limpa a divPessoas e recria todos os botões
         divPessoas.innerHTML = '';
         pessoas.forEach((p, index) => {
             divPessoas.innerHTML += `
